@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Juego</title>
+<link rel="stylesheet" type="text/css" 
+      href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+  {% block navegacion %}
+  <nav>
+    <a href="{{ url_for('obtenerTableros', nivel=1) }}">Tablero 1</a>
+    <a href="{{ url_for('obtenerTableros', nivel=2) }}">Tablero 2</a>
+    <a href="{{ url_for('obtenerTableros', nivel=3) }}">Tablero 3</a>
+</nav>
+{% endblock %}
+  
+<body>
+{% block titulo %}{% endblock %}
+{% block contenido %}{% endblock %}
+
+  
+</body>
+</html>

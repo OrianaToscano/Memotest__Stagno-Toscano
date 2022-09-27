@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ------ nav bar ------ */
+nav {
+    background-color: #1F5A95;
+    border-top: solid 1px #ccc;
+    overflow: hidden;
+}
+nav a {
+    float: left;
+    color: lightcyan;
+    text-align: center;
+    font-size: 17px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+nav a.actual {
+    background-color: #ccc;
+    font-weight: bold;
+    color: black;
+}
+
+h1, h2, h3, p {
+  margin-left: 10px;
+}
+
+/* ------ piezas ------- */
+
+.pieza{
+  height: 200px;
+  width: 200px;
+  font-size: 20px;
+  background-color: #0093B0;
+  color: black;
+  margin: 10px;
+  text-align: center;
+  display: table-caption;
+  vertical-align: middle;
+}
+
+
+.fila{
+  display: inline-table;
+  margin:0px;
+}
+
+.main{
+  height: 100%;
+  display: table;
+  text-align: center;
+  width: 100%;
+  text-align: center;
+}

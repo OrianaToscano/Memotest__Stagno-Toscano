@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+
+{% block contenido %}
+<div class="main">
+  {% for fila in datosFormateados %}
+    <div class="fila">
+      {% for valor in fila %}
+        <div class='pieza'>
+          {%if usuario == 'admin'%}
+          <h3>{{valor[0]}}</h3>
+          {%endif%}
+        </div>
+      {% endfor %}
+    </div>
+  {% endfor %}
+</div>
+{% endblock %}
